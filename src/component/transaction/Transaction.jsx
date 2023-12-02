@@ -4,6 +4,8 @@ import React, {useState} from 'react'
 const Transaction = () => {
     const [amount, setAmount] = useState();
     const [address, setAddress] = useState("");
+    // Regular expression for Ethereum addresses
+    const regex = /^0x[0-9a-fA-F]{40}$/;
 
     const postData = async()=>{
 
@@ -27,22 +29,25 @@ const Transaction = () => {
 
     const onSubmit = ()=>{
         if(address.length===0){
-            window.alert("*Wallet address filed can not be empty");
+            window.alert("Wallet address filed can not be empty");
         }
         else if(address[0]!=='0'){
-            window.alert("*Wallet address should start with 0x");
+            window.alert("Wallet address should start with 0x");
         }
         else if(address.length===1 || address[1]!=='x'){
-            window.alert("*Wallet address should start with 0x");
+            window.alert("Wallet address should start with 0x");
         }
         else if(address.length!==42){
-            window.alert("*Please enter the correct Wallet address. Wallet address length should be 42");
+            window.alert("Please enter the correct Wallet address. Wallet address length should be 42");
+        }
+        else if(!regex.test(address)){
+            window.alert("Your Wallet address is not in the proper Ethereum format. Please check it again. There should not be any symbol in Address.")
         }
         else if(amount===""){
-            window.alert("*Amount filed can be empty");
+            window.alert("Amount filed can be empty");
         }
         else if(amount<0 || amount>10000){
-            window.alert("*Please enter the number between the range 0-10000");
+            window.alert("Please enter the number between the range 0-10000");
         }
         else{
             postData();
