@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Sharpe-AI/static/css/main.dfe0ca5a.css",
-    "main.js": "/Sharpe-AI/static/js/main.c025f968.js",
+    "main.js": "/Sharpe-AI/static/js/main.a751ce13.js",
     "static/js/787.4f93a1fc.chunk.js": "/Sharpe-AI/static/js/787.4f93a1fc.chunk.js",
     "static/media/logo.png": "/Sharpe-AI/static/media/logo.4acfb68e345093ac0376.png",
     "index.html": "/Sharpe-AI/index.html",
     "main.dfe0ca5a.css.map": "/Sharpe-AI/static/css/main.dfe0ca5a.css.map",
-    "main.c025f968.js.map": "/Sharpe-AI/static/js/main.c025f968.js.map",
+    "main.a751ce13.js.map": "/Sharpe-AI/static/js/main.a751ce13.js.map",
     "787.4f93a1fc.chunk.js.map": "/Sharpe-AI/static/js/787.4f93a1fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfe0ca5a.css",
-    "static/js/main.c025f968.js"
+    "static/js/main.a751ce13.js"
   ]
 }
