@@ -32,6 +32,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/Sharpe-AI' element={<Home/>}/>
         <Route path='/data' element={<Data posts={posts}/>}/>
         <Route path='/transaction' element={<Transaction/>}/>
       </Routes>

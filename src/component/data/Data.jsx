@@ -1,9 +1,8 @@
-import { useState } from 'react';
 import React from 'react'
 import { PieChart } from 'react-minimal-pie-chart';
 
 const Data = ({posts}) => {
-    const [count, setCount] = useState(10);
+    const count = 10;
     // setCount(10);
   return (
     <div className='text-white mx-2'>
